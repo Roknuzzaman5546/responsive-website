@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.text1, .text2{
+    width: 300px;
+    height: 140px;
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+}
+.pic2{
+    margin-top: 60px;
+}
+.pic5{
+    margin-top: 60px;
+}
+img{
+    width: 150px;
+    height: 200px;
+    margin-top: 30px;
+    padding: 10px;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    padding-right: 30px;
+    width: 70%;
+    margin: auto;
+}
+@media screen and (max-width:576px) {
+    .header{
+        flex-direction: column;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
